@@ -1,38 +1,199 @@
-.App {
-  text-align: center;
+.w {
+  margin: 0 12px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.choice {
+  height: 40px;
+  line-height: 40px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.choice .selected {
+  border-bottom: 2px solid #209F84;
+  font-weight: bold;
+  color: #209F84;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.choice span {
+  font-size: 16px;
+  font-family: PingFang SC;
+  color: rgba(0, 0, 0, 0.45);
+  float: left;
+  margin: 0 15px;
+}
+.item {
+  box-sizing: border-box;
+  height: 160px;
+  margin-top: 12px;
+  padding: 12px;
+  background: #FFFFFF;
+  border-radius: 4px;
+}
+.item:nth-of-type(3) {
+  height: 246px;
+}
+.item:nth-of-type(4) {
+  height: 216px;
+}
+.item:nth-of-type(5) {
+  height: 192px;
+}
+.show {
+  display: flex;
+}
+.show:nth-of-type(3) {
+  margin: 20px 0;
+}
+.item-title {
+  height: 24px;
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.75);
+  margin-bottom: 12px;
+}
+.sLeft {
+  box-sizing: border-box;
+  width: 157.5px;
+  height: 100px;
+  padding: 0 29px;
+  margin-right: 12px;
+}
+.sLeft span {
+  font-size: 14px;
+}
+.sLeft div:first-child {
+  height: 24px;
+  line-height: 24px;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.75);
+  margin-top: 9px;
+}
+.sLeft div:nth-child(2) {
+  height: 32px;
+  line-height: 32px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #209F84;
+  margin: 4px 0;
+}
+.sLeft div:last-child {
+  height: 18px;
+  line-height: 18px;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.45);
+}
+.sRight {
+  position: relative;
+  width: 157.5px;
+}
+.item-num {
+  width: 36px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin-right: 12px;
+}
+.item-num div {
+  height: 18px;
+  flex: 1;
+  align-content: space-between;
+  line-height: 18px;
+  margin: 6px 0;
+  background: #28B1BF;
+  border-radius: 9px;
+  font-size: 10px;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+}
+.item-num div:nth-of-type(4) {
+  background-color: #788C96;
+}
+.item-num div:nth-of-type(5) {
+  background-color: #788C96;
+}
+.public {
+  flex: 1;
+}
+.public .circle {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  background-color: #209F84;
+  border: 8px solid #D4EFF2;
+  border-radius: 50%;
 }
-
-.App-link {
-  color: #61dafb;
+.public .circle div {
+  height: 16px;
+  margin: 0 auto;
+  font-size: 12px;
+  color: #fff;
+  line-height: 16px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.public .circle .value {
+  font-weight: bold;
+}
+.item-top {
+  height: 76px;
+  margin-bottom: 12px;
+}
+.item-dt {
+  position: relative;
+  height: 44px;
+}
+.item-dt div:first-child {
+  height: 24px;
+  font-size: 14px;
+  margin-bottom: 4px;
+  opacity: 0.8;
+}
+.item-dt div:nth-child(2) {
+  height: 16px;
+  font-size: 12px;
+  opacity: 0.45;
+}
+.item-dt div:last-child {
+  position: absolute;
+  height: 100%;
+  line-height: 44px;
+  right: 0;
+  top: 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #209F84;
+}
+.item-dt div:last-child span {
+  font-size: 12px;
+}
+/* 二级标题 */
+.item-stitle {
+  height: 24px;
+  line-height: 24px;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.75);
+  margin-bottom: 12px;
+}
+/* 图表样式 */
+.chart {
+  width: 128px;
+  height: 116px;
+  position: absolute;
+  top: -12px;
+  left: 8px;
+}
+.indChart {
+  width: 279px;
+  height: 150px;
+}
+.natChart {
+  width: 322px;
+  height: 72px;
+  margin: auto;
+}
+/* 组件库覆盖 */
+.am-navbar {
+  background-color: #209F84;
+}
+.am-navbar-title {
+  font-size: 17px;
+  font-weight: bold;
 }
